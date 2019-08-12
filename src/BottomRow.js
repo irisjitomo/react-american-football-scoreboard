@@ -38,8 +38,8 @@ const BottomRow = () => {
         <h3 className="quarter__title">Quarter</h3>
         <div className="quarter__value">{quarter}</div>
       </div>
-      <div>
-        <button onClick={() => changeQuarter(quarter + 1)}>Change Quarter</button>
+      <div className='changeQuarterState'>
+        <button onClick={() => changeQuarter(quarter + 1)}></button>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ function App() {
   const [homeScore, scoreAddHome] = useState(32);
   const [awayScore, scoreAddAway] = useState(14);
   // const [quarter, changeQuarter] = useState(1);
+  // const [] = useState()
  
 
   return (
