@@ -6,7 +6,7 @@
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  background-color: #003f91;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
@@ -34,11 +34,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #006400;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #f80000;
 }
 
 .home__name,
@@ -119,4 +119,13 @@
 .awayButtons__fieldGoal {
   margin: 1rem;
   border-radius: 4px;
+}
+
+.changeQuarterState{
+  width:50px;
+  height: auto;
+  /* border:1px solid white; */
+  /* background: #0b5402; */
+  /* display: none; */
+  
 }

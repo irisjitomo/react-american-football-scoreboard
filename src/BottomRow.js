@@ -1,7 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
+import App from "./App";
+import { reset } from "ansi-colors";
+// import App from "./App";
+
+
+
+// console.log(useState(1))
+
 
 const BottomRow = () => {
+  const [quarter, changeQuarter] = useState(1);
+  // console.log(useState)
+  
+  let start = 1
+  if (quarter === 5){
+    changeQuarter('OT')
+  } if (quarter === "OT1") {
+    changeQuarter(start)
+  }
+
   return (
     <div className="bottomRow">
       <div className="down">
@@ -18,7 +36,10 @@ const BottomRow = () => {
       </div>
       <div className="quarter">
         <h3 className="quarter__title">Quarter</h3>
-        <div className="quarter__value">4</div>
+        <div className="quarter__value">{quarter}</div>
+      </div>
+      <div className='changeQuarterState'>
+        <button onClick={() => changeQuarter(quarter + 1)}></button>
       </div>
     </div>
   );
